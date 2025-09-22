@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(to bottom, #39416f, #214867);
+    color: #d9d2d2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.plans {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plan {
+    background: linear-gradient(to bottom, #ef6f6f, #da413c);
+    color: #ffffff;
+    margin: 20px 0;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.title-one {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #39416f, #214867);
+  margin-bottom: 8px;
+padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+ul.features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.features li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.button {
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    color: #383737;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 16px; /* Space above button */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    transform: scale(1.05);
+}
