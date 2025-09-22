@@ -44,12 +44,10 @@ body {
 .title-one {
   font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(90deg, #091e54, #000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to bottom, #39416f, #214867);
   margin-bottom: 8px;
+padding: 2px 8px;
+  border-radius: 12px;
 }
 
 .price {
