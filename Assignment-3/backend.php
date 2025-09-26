@@ -66,4 +66,6 @@ $events = match ($day) {
     "Wed", "Thu" => ["color" => "#984737", "activity" => "Do exercise"]
 };
 echo "<P style = 'background: {$events["color"]}; color: #ccc';>{$events['activity']};</P>";
+echo "<br>";
+
 ?>
