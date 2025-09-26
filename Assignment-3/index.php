@@ -2,13 +2,28 @@
 $role = "";
 $username = "";
 $message = "";
-$users = ["Raju", "Shofiqe", "rased", "patel"];
+$users = ["Raju", "Shofiqe", "Rased", "Patel"];
+$validroles = ["Admin", "Editor", "User"];
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['role']) && isset($_POST['username'])) {
-    $role = trim($_POST['role']);
-    $username = trim($_POST['username']);
+    $role =strtolower(trim($_POST['role']));
+    $username = strtolower(trim($_POST['username']));
+
+    $role = ucfirst($role);
+    $username = ucfirst($username);
 
         if(!empty($role) && !empty($username)) {
-                $message = "Welcome $username, Your role is $role";
+                if(!in_array(($username), $users)) {
+                    $message = "❌ $username is not in our company lis";
+                } elseif (!in_array(($role), $validroles)) {
+                    $message = "⚠️ Invalid role. Allowed roles: admin, editor, user.";
+                } else {
+                    $message = match($role) {
+                        "Admin" => "👑 Welcome $username , you have full access",
+                        "Editor" => "👏 Hello $username, you can edit content",
+                        "Users"=> "👍 Hi $username, You can use our website",
+                    };
+                }
+                    
         } else{
             $message = "Provide role and username";
         }
