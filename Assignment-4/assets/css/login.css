@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #433147, #2d2d2f);
+    height: 100vh;
+    color: aquamarine;
+    font-weight: 600;
+    font-size: 20px;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: chartreuse;
+    background:  linear-gradient(to bottom, #575bd3, #4040e4);
+    padding: 0px 18px;
+    margin:  auto;
+    width: fit-content;
+    border-radius: 10px;
+   
+}
+.admin:hover{
+    background:linear-gradient(to bottom, #4449d8, #3838e7) ;
+    
+}
+.admin h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom:-2px ;
+}
+
+.admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.admin input {
+  padding: 12px 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+
+.admin button {
+  padding: 12px;
+  background:  #343435;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin button:hover {
+  background:  #101011;
+}
+
+.login {
+    font-size: 16px;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+}
+.login a {
+    color: #ffffff;
+}
+
