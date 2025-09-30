@@ -16,4 +16,10 @@ $str = (string) $changes;
 
 var_dump($changes, $str);
 echo "</pre>";
+
+
+$array =["apple", "banana", "milk"];
+foreach ($array as $arr) {
+    echo " $arr, <br>";
+}
 ?>
