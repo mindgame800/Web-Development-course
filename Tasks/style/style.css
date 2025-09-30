@@ -1,0 +1,110 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Body background and centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b2c2e, #444f50);
+}
+
+/* Form container */
+form {
+  background: linear-gradient(135deg, #719af2, #2b6ce5);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Labels */
+form label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #333;
+  display: block;
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+form input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  background: #e2e8e4;
+}
+
+form input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+  outline: none;
+}
+
+/* Button */
+form button {
+  padding: 0.9rem;
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #3c8ce7;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+}
+
+/* Message box */
+.msg {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+  display: none; /* hidden by default */
+}
+
+/* Success / error states */
+.msg.success {
+  display: block;
+  background: #e0f9e5;
+  color: #2b7a3d;
+  border: 1px solid #2b7a3d;
+}
+
+.msg.error {
+  display: block;
+  background: #fde4e4;
+  color: #a12d2d;
+  border: 1px solid #a12d2d;
+}
+.login{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 4px;
+  color: #e0f9e5;
+  font-weight: 700;
+}
+.login a {
+  color: #e0f9e5;
+}
