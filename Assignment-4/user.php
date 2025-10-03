@@ -9,4 +9,9 @@
     'name' => 'Mahin',
     'password' => '34ERWes',
   ),
+  'tahsin@gmail.com' => 
+  array (
+    'name' => 'tahsin',
+    'password' => 'tahsin123',
+  ),
 );
